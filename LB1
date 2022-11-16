@@ -1,175 +1,159 @@
-cd lab0
-mkdir cascoon3
-mkdir clamperl6
-mkdir darmanitan3
-cd cascoon3
-mkdir yamask
-mkdir pikachu
-touch manectric
-mkdir lombre
-mkdir wynaut
-cd ..
-cd clamperl6
-touch pikachu
-touch gabite
-touch caterpie
-mkdir dusknoir
-mkdir misdreavus
-cd ..
-touch cloyster7
-cd darmanitan3
-touch fearow
-mkdir burmy
-touch oshawott
-touch bulbasaur
-cd ..
-touch kakuna0
-touch ledian9
-cd cascoon3
-echo "Возможности Overland=8 Surface=6 Jump=3 Power=3" >> manectric
-echo "Intelligence=4 Tracker=0" >> manectric
-cd ..
-cd clamperl6
-echo "Тип диеты Herbivore" >> pikachu
-echo "Ходы" >> gabite
-echo "Draco Meteor Dragon Pulse Dual Power Earth Power Fury Cutter Iron Head Iron Tail Mud-Slap Outrage Rock Climb Sleep Talk Snore Stealth Rock Swift Twister" >> gabite
-echo "Тип покемона BUG NONE" >> caterpie
-cd ..
-echo "Тип покемона" >> cloyster7
-echo "WATER ICE" >> cloyster7
-cd darmanitan3
-echo "satk=6 sdef=6 spd=10" >> fearow
-echo "Способности Torrent" >> oshawott
-echo "Hyper Cutter Inner Focus" >> oshawott
-echo "Тип диеты Herbivore" >> bulbasaur
-echo "Phototroph" >> oshawott
-cd ..
-echo "satk=3 sdef=3 spd=4" >> kakuna0
-echo "Способности Swarm" >> ledian9
-echo "Mach Speed Early Bird Frisk" >> ledian9
-chmod 330 cascoon3
-cd cascoon3
-chmod u=rwx yamask
-chmod g=r-x yamask
-chmod o=-w- yamask
-chmod u=rwx pikachu
-chmod g=rw- pikachu
-chmod o=r-- pikachu
-chmod 640 manectric
-chmod 551 lombre
-chmod 551 wynaut
-cd ..
-chmod 305 clamperl6
-cd clamperl6
-chmod u=rw- pikachu
-chmod g=-w- pikachu
-chmod o=-w- pikachu
-chmod u=--- gabite
-chmod g=rw- gabite
-chmod o=--- gabite
-chmod u=rw- caterpie
-chmod g=r-- caterpie
-chmod o=--- caterpie
-chmod u=rwx dusknoir
-chmod g=-wx dusknoir
-chmod o=rwx dusknoir
-chmod u=-wx misdreavus
-chmod g=rw- misdreavus
-chmod o=--x misdreavus
-cd ..
-chmod u=rw- cloyster7
-chmod g=--- cloyster7
-chmod o=--- cloyster7
-chmod u=rwx darmanitan3
-chmod g=-wx darmanitan3
-chmod o=rwx darmanitan3
-cd darmanitan3
-chmod 440 fearow
-chmod u=rwx burmy
-chmod g=r-x burmy
-chmod o=-wx burmy
-chmod 006 oshawott
-chmod 664 bulbasaur
-cd ..
-chmod u=r-- kakuna0
-chmod g=r-- kakuna0
-chmod o=r-- kakuna0
-chmod 644 ledian9
-chmod u=rwx cascoon3
-chmod u=rwx cascoon3/wynaut
-cp ~/lab0/cloyster7 ~/lab0/cascoon3/wynaut/
-chmod u=rwx ledian9
-chmod u=rwx clamperl6
-ln ~/lab0/ledian9 ~/lab0/clamperl6/pikachuledian
-chmod u=rwx cascoon3/*
-cp -r ~/lab0/cascoon3 ~/lab0/clamperl6 #РЕКУРСИЯ, ПОЭТОМУ КОПИЯ В ДРУГУЮ ПАПКУ(ПО СОВЕТУ ПРЕПОДА)
-chmod u=rwx ledian9
-chmod u=rwx clamperl6/pikachuledian
-ln -s ~/lab0/ledian9 ~/lab0/clamperl6/pikachuledian
-ln -s ~/lab0/cascoon3 Copy_44
-chmod u=rwx cloyster7
-cat cloyster7 > ~/lab0/darmanitan3/oshawottcloyster
-chmod u=rwx darmanitan3/fearow
-cat ~/lab0/darmanitan3/fearow ~/lab0/cascoon3/manectric > ~/lab0/cloyster7_61
-chmod 330 cascoon3
-cd cascoon3
-chmod u=rwx yamask
-chmod g=r-x yamask
-chmod o=-w- yamask
-chmod u=rwx pikachu
-chmod g=rw- pikachu
-chmod o=r-- pikachu
-chmod 640 manectric
-chmod 551 lombre
-chmod 551 wynaut
-cd ..
-chmod 305 clamperl6
-cd clamperl6
-chmod u=rw- pikachu
-chmod g=-w- pikachu
-chmod o=-w- pikachu
-chmod u=--- gabite
-chmod g=rw- gabite
-chmod o=--- gabite
-chmod u=rw- caterpie
-chmod g=r-- caterpie
-chmod o=--- caterpie
-chmod u=rwx dusknoir
-chmod g=-wx dusknoir
-chmod o=rwx dusknoir
-chmod u=-wx misdreavus
-chmod g=rw- misdreavus
-chmod o=--x misdreavus
-cd ..
-chmod u=rw- cloyster7
-chmod g=--- cloyster7
-chmod o=--- cloyster7
-chmod u=rwx darmanitan3
-chmod g=-wx darmanitan3
-chmod o=rwx darmanitan3
-cd darmanitan3
-chmod 440 fearow
-chmod u=rwx burmy
-chmod g=r-x burmy
-chmod o=-wx burmy
-chmod 006 oshawott
-chmod 664 bulbasaur
-cd ..
-chmod u=r-- kakuna0
-chmod g=r-- kakuna0
-chmod o=r-- kakuna0
-chmod 644 ledian9
-chmod u=rwx cascoon3
-chmod u=rwx cascoon3/wynaut
-cat ~/lab0/**/b* ~/lab0/b* | wc -m | sort -n
-ls -lc ~/lab0/**/*3 ~/lab0/*3 2>&1 | tail -n 4
-cat -n ~/lab0/**/*3 ~/lab0/*3 2>&1 |  sort -k2
-ls -RrS ~/lab0/*/*ca* 2>/dev/null
-ls -lR ~/lab0/* 2>/tmp/tmp1 | sort -k5 |head -n 4
-cat ~/lab0/clamperl6/gabite ~/lab0/clamperl6/caterpie ~/lab0/darmanitan3/fearow 2>/tmp/tmp1 | wc | sort
-rm ~/lab0/cloyster7
-rm ~/lab0/cascoon3/manectric
-rm ~/lab0/clamperl6/pikachuledi*
-rm ~/lab0/clamperl6/pikachuledi*
-rm -r ~/lab0/darmanitan3
-rm -r ~/lab0/cascoon3/wynaut
+cd lab0 
+mkdir cascoon3 
+mkdir clamperl6 
+mkdir darmanitan3 
+cd cascoon3 
+mkdir yamask 
+mkdir pikachu 
+touch manectric 
+mkdir lombre 
+mkdir wynaut 
+cd .. 
+cd clamperl6 
+touch pikachu 
+touch gabite 
+touch caterpie 
+mkdir dusknoir 
+mkdir misdreavus 
+cd .. 
+touch cloyster7 
+cd darmanitan3 
+touch fearow 
+mkdir burmy 
+touch oshawott 
+touch bulbasaur 
+cd .. 
+touch kakuna0 
+touch ledian9 
+cd cascoon3 
+echo "Возможности Overland=8 Surface=6 Jump=3 Power=3" >> manectric 
+echo "Intelligence=4 Tracker=0" >> manectric 
+cd .. 
+cd clamperl6 
+echo "Тип диеты Herbivore" >> pikachu 
+echo "Ходы" >> gabite 
+echo "Draco Meteor Dragon Pulse Dual Power Earth Power Fury Cutter Iron Head Iron Tail Mud-Slap Outrage Rock Climb Sleep Talk Snore Stealth Rock Swift Twister" >> gabite 
+echo "Тип покемона BUG NONE" >> caterpie 
+cd .. 
+echo "Тип покемона" >> cloyster7 
+echo "WATER ICE" >> cloyster7 
+cd darmanitan3 
+echo "satk=6 sdef=6 spd=10" >> fearow 
+echo "Способности Torrent" >> oshawott 
+echo "Hyper Cutter Inner Focus" >> oshawott 
+echo "Тип диеты Herbivore" >> bulbasaur 
+echo "Phototroph" >> oshawott 
+cd .. 
+echo "satk=3 sdef=3 spd=4" >> kakuna0 
+echo "Способности Swarm" >> ledian9 
+echo "Mach Speed Early Bird Frisk" >> ledian9 
+chmod 330 cascoon3 
+cd cascoon3 
+chmod u=rwx yamask 
+chmod g=r-x yamask 
+chmod o=-w- yamask 
+chmod u=rwx pikachu 
+chmod g=rw- pikachu 
+chmod o=r-- pikachu 
+chmod 640 manectric 
+chmod 551 lombre 
+chmod 551 wynaut 
+cd .. 
+chmod 305 clamperl6 
+cd clamperl6 
+chmod u=rw- pikachu 
+chmod g=-w- pikachu 
+chmod o=-w- pikachu 
+chmod u=--- gabite 
+chmod g=rw- gabite 
+chmod o=--- gabite 
+chmod u=rw- caterpie 
+chmod g=r-- caterpie 
+chmod o=--- caterpie 
+chmod u=rwx dusknoir 
+chmod g=-wx dusknoir 
+chmod o=rwx dusknoir 
+chmod u=-wx misdreavus 
+chmod g=rw- misdreavus 
+chmod o=--x misdreavus 
+cd .. 
+chmod u=rw- cloyster7 
+chmod g=--- cloyster7 
+chmod o=--- cloyster7 
+chmod u=rwx darmanitan3 
+chmod g=-wx darmanitan3 
+chmod o=rwx darmanitan3 
+cd darmanitan3 
+chmod 440 fearow 
+chmod u=rwx burmy 
+chmod g=r-x burmy 
+chmod o=-wx burmy 
+chmod 006 oshawott 
+chmod 664 bulbasaur 
+cd .. 
+chmod u=r-- kakuna0 
+chmod g=r-- kakuna0 
+chmod o=r-- kakuna0 
+chmod 644 ledian9 
+chmod u=rwx cascoon3 
+chmod u=rwx cascoon3/wynaut 
+cp ~/lab0/cloyster7 ~/lab0/cascoon3/wynaut/ 
+chmod u=rwx ledian9 
+chmod u=rwx clamperl6 
+ln ~/lab0/ledian9 ~/lab0/clamperl6/pikachuledian 
+chmod u=rwx cascoon3/* 
+cp -r ~/lab0/cascoon3 ~/lab0/clamperl6
+chmod u=rwx ledian9 
+ln -s ~/lab0/ledian9 ~/lab0/clamperl6/pikachuledian1 
+ln -s ~/lab0/cascoon3 Copy_44 
+chmod u=rwx cloyster7 
+cat cloyster7 > ~/lab0/darmanitan3/oshawottcloyster 
+chmod u=rwx darmanitan3/fearow 
+cat ~/lab0/darmanitan3/fearow ~/lab0/cascoon3/manectric > ~/lab0/cloyster7_61 
+chmod 330 cascoon3 
+chmod 551 ~/lab0/cascoon3/wynaut 
+chmod 644 ledian9 
+chmod 305 clamperl6 
+cd cascoon3 
+chmod g=r-x yamask 
+chmod o=-w- yamask 
+chmod u=rwx pikachu 
+chmod g=rw- pikachu 
+chmod o=r-- pikachu 
+chmod 640 manectric 
+chmod 551 lombre 
+chmod 551 wynaut 
+cd .. 
+chmod u=rw- cloyster7 
+cd darmanitan3 
+chmod 440 fearow 
+cd .. 
+
+
+cat ~/lab0/**/b* ~/lab0/b* | wc -m | sort -n 
+ls -lc ~/lab0/**/*3 ~/lab0/*3 2>&1 | tail -n 4 
+cat -n ~/lab0/**/*3 ~/lab0/*3 2>&1 |  sort -k2 
+ls -RrS ~/lab0/*/*ca* 2>/dev/null 
+ls -lR ~/lab0/* 2>/tmp/tmp1 | sort -k5 |head -n 4 
+cat ~/lab0/clamperl6/gabite ~/lab0/clamperl6/caterpie ~/lab0/darmanitan3/fearow 2>/tmp/tmp1 | wc | sort 
+ 
+ 
+ 
+ 
+rm ~/lab0/cloyster7 
+rm ~/lab0/cascoon3/manectric 
+chmod u=rwx clamperl6 
+rm ~/lab0/clamperl6/pikachuledian 
+rm ~/lab0/clamperl6/pikachuledian1 
+rm -rf ~/lab0/darmanitan3 
+rm -rf ~/lab0/cascoon3/wynaut 
+ 
+ 
+ 
+ 
+chmod -R 777 ~/lab0 
+cd .. 
+rm -rf lab0 
+touch lab0
+
+chmod u+w,g-r,o=+w-r cloyster7
